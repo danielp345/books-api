@@ -10,7 +10,7 @@ function BookItem({ book }) {
 	}
 
 	return (
-		<div className="flex justify-center items-center">
+		<div className="flex justify-center items-center w-11/12">
 			<div
 				className={`stats shadow ${
 					isClicked ? "bg-green-300" : "bg-base-300"
@@ -48,7 +48,7 @@ function BookItem({ book }) {
 					</div>
 				)}
 			</div>
-			<button onClick={toggle} className="btn">
+			<button onClick={toggle} className="btn w-3/12 lg:w-1/12">
 				{isClicked ? "Remove" : "Add"}
 			</button>
 		</div>
