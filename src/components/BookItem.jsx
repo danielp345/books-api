@@ -14,7 +14,7 @@ function BookItem({ book }) {
 			<div
 				className={`stats shadow ${
 					isClicked ? "bg-green-300" : "bg-base-300"
-				} m-5 w-1/2`}
+				} m-5 w-1/2 flex flex-col lg:flex-row`}
 			>
 				{imageLinks !== undefined && (
 					<div className="stat">
@@ -49,7 +49,7 @@ function BookItem({ book }) {
 				)}
 			</div>
 			<button onClick={toggle} className="btn">
-				Add
+				{isClicked ? "Remove" : "Add"}
 			</button>
 		</div>
 	)
