@@ -6,11 +6,9 @@ function App() {
 	return (
 		<BookProvider>
 			<Router>
-				<div>
-					<Routes>
-						<Route path="/" element={<Home />} />
-					</Routes>
-				</div>
+				<Routes>
+					<Route path="/" element={<Home />} />
+				</Routes>
 			</Router>
 		</BookProvider>
 	)
